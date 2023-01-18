@@ -6,7 +6,7 @@ Elle permet la gestion simple de client et de facture (création/récupération)
 L'architecture a été simplifiée mais il est tout à fait possible de placer chaque couche dans un projet différent (Presentation, Application, Domain et Infrastructure).
 
 Plusieurs éléments ont été mis en place :
-- Du DDD simple via l'utilisation d'un domaine contenant notre objet métier épuré,
+- Du DDD simple via l'utilisation d'un domaine contenant nos objets métier épurés,
 - Du CQRS via l'outi MediatR,
 - Des tests unitaires et d'intégrations. Ces derniers s'appuient sur l'utilisation de Fixture et d'une base de données mémoire.
 
