@@ -11,12 +11,12 @@ namespace PF.Presentation.Models.Factures
             Id = facture.Id;
             Libelle = facture.Libelle;
             Content = facture.Content;
-            Montant = facture.Montant;
+            MontantEstime = facture.GetMontantEstime(DateTime.Now.Year * 0.02);
         }
 
         public Guid Id { get; }
         public string Libelle { get; }
         public string Content { get; }
-        public double Montant { get; }
+        public double MontantEstime { get; }
     }
 }

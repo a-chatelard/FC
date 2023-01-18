@@ -11,7 +11,7 @@ namespace PF.Presentation.Models.Clients
         public ClientDetailsResult(Client client) : base(client)
         {
             Factures = client.Factures.Select(f => new FactureResult(f)).ToImmutableList();
-            MontantFactures = Factures.Sum(f => f.Montant);
+            MontantFactures = Factures.Sum(f => f.MontantEstime);
         }
 
         public ImmutableList<FactureResult> Factures { get; }

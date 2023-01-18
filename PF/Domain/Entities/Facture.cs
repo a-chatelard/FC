@@ -31,5 +31,10 @@
             Content = content;
             Montant = montant;
         }
+
+        public double GetMontantEstime(double taux)
+        {
+            return Montant * taux;
+        }
     }
 }
